@@ -1,0 +1,26 @@
+.form-title {
+    color: #e8bd72;
+}
+
+.signup-form {}
+
+.signup-image {
+    margin-top: 0;
+}
+
+.cart-name {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#signup {
+    border: none;
+}
+
+.cart {
+    border-bottom: 1px solid #ccc;
+}
+
+.total_price {
+    border-radius: 4px;
+    background-color: #ccc;
+}

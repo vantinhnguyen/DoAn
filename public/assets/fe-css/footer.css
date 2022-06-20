@@ -1,0 +1,21 @@
+.footer {
+    /* background: url(https://theme.hstatic.net/1000305059/1000394224/14/ft_bg_img.jpg?v=3615) no-repeat center / contain; */
+    color: #f4f4f4;
+    background-color: #ffffff;
+    background-image: url(//theme.hstatic.net/1000305059/1000394224/14/ft_bg_img.jpg?v=3615);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0 20px 0;
+    border-top: 2px solid #e8bd72;
+}
+
+.logo-footer {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-footer img {
+    width: 100%;
+    height: 100%;
+}

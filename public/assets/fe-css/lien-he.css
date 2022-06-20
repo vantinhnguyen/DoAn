@@ -1,0 +1,21 @@
+.lien-he {
+    padding-bottom: 130px;
+}
+
+.lien-he .dia-chi {
+    padding: 16px 0 16px 0;
+}
+
+.lien-he h5 {
+    color: #5a6069;
+    font-weight: 700;
+    text-align: center;
+}
+
+.lien-he p {
+    font-style: italic;
+    color: #5a6069;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}

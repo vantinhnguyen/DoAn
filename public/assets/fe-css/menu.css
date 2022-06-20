@@ -1,0 +1,255 @@
+    html {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    /* Phần menu cho desktop */
+    
+    .nav-desktop {
+        background-image: url(https://royalhelmet.com.vn/images/bg-header-3.png);
+        height: 110px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    /* Phần bên trái */
+    
+    .nav-left {
+        height: 110px;
+    }
+    
+    .nav-left-top {
+        height: 50px;
+    }
+    
+    .nav-left-top ul {
+        list-style: none;
+    }
+    
+    .nav-left-top ul li {
+        height: 50px;
+    }
+    
+    .nav-left-top ul li a {
+        line-height: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-style: italic;
+    }
+    
+    .nav-left-top ul li a:hover {
+        color: #e8bd70;
+    }
+    
+    .nav-left-bottom {
+        height: 60px;
+    }
+    
+    .nav-left-bottom .category {
+        margin-right: 36px;
+        padding-top: 13px;
+    }
+    
+    .nav-left-bottom .category .category_tile {
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 18px;
+        color: #e8bd70;
+        font-style: italic;
+        border: solid 2px #e8bd70;
+        display: block;
+        padding: 4px 24px 4px 24px;
+        border-radius: 30px;
+        /* margin-right: 36px; */
+        /* position: relative; */
+    }
+    
+    .nav-left-bottom .category:hover .category_tile {
+        color: #0f1a2c;
+        background-color: #e8bd70;
+        cursor: pointer;
+    }
+    
+    .nav-left-bottom .category .category_list {
+        padding: 10px 0 0 0;
+        list-style: none;
+        display: none;
+        position: relative;
+        top: 0;
+        left: 20px;
+    }
+    
+    .nav-left-bottom .category:hover .category_list {
+        display: block;
+    }
+    
+    .nav-left-bottom .category .category_list li {
+        background-color: #e8bd70;
+        padding: 4px 0 4px 12px;
+    }
+    
+    .nav-left-bottom .category .category_list li a {
+        display: block;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        color: #0f1a2c;
+        font-style: italic;
+    }
+    
+    .nav-left-bottom .category .category_list li a:hover {
+        transform: translateX(5px);
+    }
+    
+    .nav-left-bottom .category .category_list li a img {
+        height: 24px;
+        width: 24px;
+    }
+    /* phần trung tâm */
+    
+    .nav-center {
+        height: 110px;
+    }
+    /* Phần bên phải */
+    
+    .nav-right {
+        height: 110px;
+    }
+    
+    .nav-right-top {
+        height: 50px;
+    }
+    
+    .nav-right-top ul {
+        list-style: none;
+    }
+    
+    .nav-right-top ul li {
+        height: 50px;
+    }
+    
+    .nav-right-top ul li a {
+        line-height: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-style: italic;
+    }
+    
+    .nav-right-top ul li a:hover {
+        color: #e8bd70;
+    }
+    /* phần dưới phải */
+    
+    .nav-right-bottom {
+        height: 60px;
+        padding-left: 36px;
+        padding-top: 17px;
+    }
+    
+    .nav-right-bottom i {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 800;
+    }
+    
+    .nav-right-bottom .user {
+        position: relative;
+    }
+    
+    .nav-right-bottom .user:hover .user_option {
+        display: block;
+    }
+    
+    .nav-right-bottom .user .user_option {
+        list-style: none;
+        width: 200px;
+        padding-top: 20px;
+        padding-left: 0;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        display: none;
+    }
+    
+    .nav-right-bottom .user .user_option li {
+        padding: 8px 0 4px 12px;
+        background-color: #e8bd70;
+    }
+    
+    .nav-right-bottom .user .user_option li a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+        font-style: italic;
+    }
+    
+    .nav-right-bottom .user .user_option li a:hover {
+        transform: translateX(5px);
+    }
+    
+    .nav-right-bottom .user .user_option li i {
+        color: #0f1a2c;
+        font-size: 16px;
+        padding: 0 4px 0 4px;
+        line-height: 24px;
+    }
+    
+    .nav-right-bottom i:hover {
+        cursor: pointer;
+        color: #e8bd70;
+    }
+    
+    .nav-right-bottom .qty {
+        display: inline-block;
+        line-height: 20px;
+        position: relative;
+        left: -10px;
+        bottom: -4px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #e8bd72;
+        color: #0f1a2c;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .nav-right-bottom .total_price {
+        color: #fff;
+        margin-left: -12px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .nav-right-bottom .search {}
+    
+    .nav-right-bottom .search .keyword_text {
+        border: solid 2px #e8bd70;
+        border-radius: 8px;
+        color: #0f1a2c;
+        font-size: 14px;
+        font-weight: 400;
+        width: 170px;
+    }
+    
+    .nav-right-bottom .search .keyword_btn {
+        border: none;
+        border-radius: 8px;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0);
+        height: 27px;
+        width: 27px;
+    }
+    
+    .nav-right-bottom .search .keyword_btn .ti-search {
+        line-height: 1.2;
+    }

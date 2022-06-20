@@ -1,0 +1,101 @@
+/* Phân title */
+
+.product .title .gachTrai {
+    height: 1px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: solid 1px;
+    border-color: #103151;
+}
+
+.product .title .text h2 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #103151;
+}
+
+.product .title .gachPhai {
+    height: 1px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: solid 1px;
+    border-color: #103151;
+}
+
+
+/* Phần banner */
+
+.banner {
+    height: 500px;
+    height: 250px;
+    padding: 30px 0;
+    background-image: url(https://royalhelmet.com.vn/ckfinder/userfiles/images/banner/banner_news.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.sub-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner h3 {
+    color: #e8bd72;
+    font-size: 40px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+}
+
+
+/* phan san phẩm */
+
+.card-title {
+    color: #103151;
+    font-weight: 700;
+}
+
+.card-body {
+    background-color: #fff;
+    position: relative;
+}
+
+.card-body_product {
+    background: url(https://royalhelmet.com.vn/images/bg-title-3.png) no-repeat;
+    background-size: cover;
+    padding-top: 3.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 1rem;
+    min-height: 150px;
+}
+
+.sp-btn {
+    position: absolute;
+}
+
+.mau-nut {
+    background-color: rgb(226, 152, 14);
+    border: solid 4px #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sp-img {
+    transition: 0.3s;
+}
+
+.sp-img:hover {
+    transform: scale(1.05);
+}

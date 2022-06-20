@@ -1,0 +1,84 @@
+/* phần số lượng */
+
+.num {
+    -webkit-appearance: textfield !important;
+    -moz-appearance: textfield !important;
+    appearance: textfield !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.wrapper {
+    border: 1px #ccc solid;
+    margin: 0px auto;
+    width: 120px;
+    height: 35px;
+    padding: 4px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.plusminus {
+    /* width: 30%; */
+    line-height: 30px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.plusminus-left {
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+}
+
+.plusminus-right {
+    position: absolute;
+    left: 90px;
+    bottom: 2px;
+}
+
+.num {
+    display: block;
+    text-align: center;
+    border: 1px solid #6C757D;
+    font-size: 18px;
+    height: 18px;
+    width: 50px;
+    border: none;
+    font-size: 18px;
+    position: absolute;
+    left: 32px;
+    bottom: 8px;
+}
+
+.pro-name {
+    color: #e8bd72 !important;
+}
+
+.cart_del {
+    font-size: 14px;
+    font-weight: 400;
+    color: red;
+    background: none!important;
+    border: none;
+    text-align: start;
+}
+
+.cart_content {
+    padding-bottom: 289px;
+}
+
+
+/* Phần danh sach đơn hàng */
+
+.huy-don {
+    border: none;
+    background-color: none;
+    color: red;
+}

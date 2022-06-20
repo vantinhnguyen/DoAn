@@ -1,0 +1,50 @@
+/* Phần banner */
+
+.banner {
+    height: 500px;
+    height: 250px;
+    padding: 30px 0;
+    background-image: url(https://royalhelmet.com.vn/ckfinder/userfiles/images/banner/banner_news.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.sub-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner h3 {
+    color: #e8bd72;
+    font-size: 40px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+}
+
+
+/* content */
+
+.title-vct {
+    border-bottom: 1px solid #ccc;
+}
+
+.title-vct h4 {
+    color: #e8bd72;
+    font-weight: 600;
+}
+
+.vct p {
+    color: #5a6069;
+    font-style: italic;
+}
