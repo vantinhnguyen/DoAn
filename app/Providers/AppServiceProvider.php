@@ -26,7 +26,11 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->composer('*', function ($view) {
-            $userName = Auth::user()->name;
+            if (isset(Auth::user()->name)) {
+                $userName = Auth::user()->name;
+            }else{
+                $userName ="";
+            }
             $cart = new Cart();
             $totalQty = $cart->totalQty();
             $totalPrice = $cart->totalPrice();

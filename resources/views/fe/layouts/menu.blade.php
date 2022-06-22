@@ -147,7 +147,7 @@
                 </div>
 
                 <div class="search">
-                    <form action="">
+                    <form action="{{route('home.search')}}">
                         <input type="text" name="keyword" id="" class="keyword_text" placeholder="Tìm kiếm">
                         <button tyle="submit" class="keyword_btn">
                             <i class="ti-search"></i>

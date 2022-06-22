@@ -228,4 +228,11 @@ class HomeController extends Controller
     public function orderDetailAdd(Request $req){
         
     }
+
+    public function search(Request $req){
+        $key = $req->keyword;
+        $pro = Product::where('name','like','%'.$req->keyword.'%')->get();
+        // dd($pro);
+        return view('fe.layouts.san-pham-search', compact('key','pro'));
+    }
 }

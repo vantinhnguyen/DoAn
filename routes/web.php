@@ -66,6 +66,7 @@ Route::get('/blogs', [HomeController::class, 'blogs'])->name('home.blogs');
 Route::get('/tuyen-dung', [HomeController::class, 'tuyenDung'])->name('home.tuyenDung');
 Route::get('/lien-he', [HomeController::class, 'lienHe'])->name('home.lienHe');
 
+//Chức năng tài khoản
 Route::get('/login', [HomeController::class, 'login'])->name('home.login');
 Route::get('/logon', [HomeController::class, 'logon'])->name('home.logon');
 Route::post('/login', [HomeController::class, 'loginAdd'])->name('home.loginAdd');
@@ -87,3 +88,6 @@ Route::get('/checkout', [CartController::class, 'Checkout'])->name('cart.checkou
 Route::post('/checkout', [CartController::class, 'CheckoutAdd'])->name('cart.checkoutAdd');
 Route::get('/ordered', [CartController::class, 'ordered'])->name('cart.ordered');
 Route::post('/ordered-del', [CartController::class, 'orderedDel'])->name('cart.orderedDel');
+
+//tìm kiếm
+Route::get('search', [HomeController::class, 'search'])->name('home.search');
