@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
 use App\Helper\cart;
+use App\Models\Order;
 use Auth;
 class AppServiceProvider extends ServiceProvider
 {
@@ -35,11 +36,15 @@ class AppServiceProvider extends ServiceProvider
             $totalQty = $cart->totalQty();
             $totalPrice = $cart->totalPrice();
             $cart = $cart->content();
+            $orderStatus1 = Order::where('status',1)->get();
+            $orderStatus2 = Order::where('status',2)->get();
             $view->with([
                 'totalQty'=> $totalQty,
                 'totalPrice'=>$totalPrice,
                 'cart'=>$cart,
-                'userName'=>$userName
+                'userName'=>$userName,
+                'orderStatus1'=>$orderStatus1,
+                'orderStatus2'=>$orderStatus2
             ]);
         });
 

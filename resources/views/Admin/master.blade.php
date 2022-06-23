@@ -100,32 +100,34 @@
           <li class="dropdown tasks-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
+              <span class="label label-danger">{{$orderStatus1->count()}}</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">Thông báo đơn hàng</li>
+              <li class="header" style="color:#e8bd70; background-color: #0f1a2d; font-size: 14px; font-weight: 600;">Thông báo đơn hàng</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
                   <li><!-- Task item -->
-                    <a href="#">
-                      <h3>
-                        Design some buttons
-                        <small class="pull-right">20%</small>
+                    <a href="{{route('order.status1')}}">
+                      <h3 style="color:#0f1a2d;">
+                      {{$orderStatus1->count()}} đơn hàng đang chờ xác nhận
+                        <!-- <small class="pull-right">20%</small> -->
                       </h3>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                          <span class="sr-only">20% Complete</span>
-                        </div>
-                      </div>
+                    </a>
+                  </li>
+                  <li><!-- Task item -->
+                    <a href="{{route('order.status2')}}">
+                      <h3 style="color:#0f1a2d;">
+                      {{$orderStatus2->count()}} đơn hàng đang vận chuyển
+                        <!-- <small class="pull-right">20%</small> -->
+                      </h3>
                     </a>
                   </li>
                   <!-- end task item -->
                 </ul>
               </li>
               <li class="footer">
-                <a href="#">Xem đơn hàng</a>
+                <a href="{{route('order.index')}}" style="color:#00d0ff !important; font-weight: 500;">Xem đơn hàng</a>
               </li>
             </ul>
           </li>
@@ -265,11 +267,13 @@
   </div>
   <!-- /.content-wrapper -->
 
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 0.0.1
+  <footer class="main-footer" style="padding:0;">
+    <div class="logo-footer" style="display: inline-block; width: 45px;">
+      <img src="https://royalhelmet.com.vn/images/logo.png" alt="" style="width: 100%;">
     </div>
-    <strong>Copyright &copy; 2018 <a href="https://adminlte.io">TTPM_BKAP</a>.</strong>
+    <strong>
+      <a href="#">CÔNG TY TNHH SX TM MAFA VN</a>.
+    </strong>
   </footer>
 
 </div>

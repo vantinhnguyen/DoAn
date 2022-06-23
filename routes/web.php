@@ -49,6 +49,8 @@ Route::middleware(['admin'])->prefix('admin')->group(function () {
 
     //phần quản lý đơn hàng
     Route::resource('order', OrderController::class);
+    Route::get('order1', [OrderController::class, 'status1'])->name('order.status1');
+    Route::get('order2', [OrderController::class, 'status2'])->name('order.status2');
 
     //phần quản lý tài khoản
     Route::resource('account', AccountController::class);

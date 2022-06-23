@@ -94,4 +94,16 @@ class OrderController extends Controller
     {
         //
     }
+
+    public function status1()
+    {
+        $order = Order::where('status',1)->paginate(10);
+        return view('Admin.order.index',compact('order'));
+    }
+
+    public function status2()
+    {
+        $order = Order::where('status',2)->paginate(10);
+        return view('Admin.order.index',compact('order'));
+    }
 }
